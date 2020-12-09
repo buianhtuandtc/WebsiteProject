@@ -47,7 +47,7 @@
 		!function (f, b, e, v, n, t, s) {
 			if (f.fbq) return; n = f.fbq = function () {
 				n.callMethod ?
-				n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+					n.callMethod.apply(n, arguments) : n.queue.push(arguments)
 			}; if (!f._fbq) f._fbq = n;
 			n.push = n; n.loaded = !0; n.version = '2.0'; n.queue = []; t = b.createElement(e); t.async = !0;
 			t.src = v; s = b.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t, s)
@@ -1046,25 +1046,230 @@
 											<p class="title-detail">
 												Địa chỉ giao hàng
 											</p>
-                                            <form method="post">
-                                                <div class="woocommerce-address-fields">
-                                                    
-                                                    <div class="woocommerce-address-fields__field-wrapper">
-                                                                    <p class="form-row form-row-wide validate-required" id="shipping_first_name_field" data-priority=""><label for="shipping_first_name" class="">Họ và tên&nbsp;<abbr class="required" title="bắt buộc">*</abbr></label><span class="woocommerce-input-wrapper"><input type="text" class="input-text " name="shipping_first_name" id="shipping_first_name" placeholder="Nhập đầy đủ họ và tên" value=""></span></p><p class="form-row form-row-wide" id="shipping_company_field" data-priority="30"><label for="shipping_company" class="">Tên công ty&nbsp;<span class="optional">(tuỳ chọn)</span></label><span class="woocommerce-input-wrapper"><input type="text" class="input-text " name="shipping_company" id="shipping_company" placeholder="" value="" autocomplete="organization"></span></p><p class="form-row form-row-wide address-field update_totals_on_change validate-required" id="shipping_country_field" data-priority="40"><label for="shipping_country" class="">Quốc gia/Khu vực&nbsp;<abbr class="required" title="bắt buộc">*</abbr></label><span class="woocommerce-input-wrapper"><strong>Việt Nam</strong><input type="hidden" name="shipping_country" id="shipping_country" value="VN" autocomplete="country" class="country_to_state" readonly="readonly"></span></p><p class="form-row address-field validate-required validate-state form-row-wide" id="shipping_state_field" data-priority="41" data-o_class="form-row form-row-wide address-field validate-required validate-state"><label for="shipping_state" class="">Tỉnh/Thành phố&nbsp;<abbr class="required" title="bắt buộc">*</abbr></label><span class="woocommerce-input-wrapper"><select name="shipping_state" id="shipping_state" class="state_select select2-hidden-accessible" autocomplete="address-level1" data-placeholder="Chọn một tùy chọn…" data-input-classes="" tabindex="-1" aria-hidden="true"><option value="">Chọn một tùy chọn…</option><option value="HANOI">Hà Nội</option><option value="HOCHIMINH">Hồ Chí Minh</option><option value="ANGIANG">An Giang</option><option value="BACGIANG">Bắc Giang</option><option value="BACKAN">Bắc Kạn</option><option value="BACLIEU">Bạc Liêu</option><option value="BACNINH">Bắc Ninh</option><option value="BARIAVUNGTAU">Bà Rịa - Vũng Tàu</option><option value="BENTRE">Bến Tre</option><option value="BINHDINH">Bình Định</option><option value="BINHDUONG">Bình Dương</option><option value="BINHPHUOC">Bình Phước</option><option value="BINHTHUAN">Bình Thuận</option><option value="CAMAU">Cà Mau</option><option value="CANTHO">Cần Thơ</option><option value="CAOBANG">Cao Bằng</option><option value="DAKLAK">Đắk Lắk</option><option value="DAKNONG">Đắk Nông</option><option value="DANANG">Đà Nẵng</option><option value="DIENBIEN">Điện Biên</option><option value="DONGNAI">Đồng Nai</option><option value="DONGTHAP">Đồng Tháp</option><option value="GIALAI">Gia Lai</option><option value="HAGIANG">Hà Giang</option><option value="HAIDUONG">Hải Dương</option><option value="HAIPHONG">Hải Phòng</option><option value="HANAM">Hà Nam</option><option value="HATINH">Hà Tĩnh</option><option value="HAUGIANG">Hậu Giang</option><option value="HOABINH">Hoà Bình</option><option value="HUNGYEN">Hưng Yên</option><option value="KHANHHOA">Khánh Hòa</option><option value="KIENGIANG">Kiên Giang</option><option value="KONTUM">Kon Tum</option><option value="LAICHAU">Lai Châu</option><option value="LAMDONG">Lâm Đồng</option><option value="LANGSON">Lạng Sơn</option><option value="LAOCAI">Lào Cai</option><option value="LONGAN">Long An</option><option value="NAMDINH">Nam Định</option><option value="NGHEAN">Nghệ An</option><option value="NINHBINH">Ninh Bình</option><option value="NINHTHUAN">Ninh Thuận</option><option value="PHUTHO">Phú Thọ</option><option value="PHUYEN">Phú Yên</option><option value="QUANGBINH">Quảng Bình</option><option value="QUANGNAM">Quảng Nam</option><option value="QUANGNGAI">Quảng Ngãi</option><option value="QUANGNINH">Quảng Ninh</option><option value="QUANGTRI">Quảng Trị</option><option value="SOCTRANG">Sóc Trăng</option><option value="SONLA">Sơn La</option><option value="TAYNINH">Tây Ninh</option><option value="THAIBINH">Thái Bình</option><option value="THAINGUYEN">Thái Nguyên</option><option value="THANHHOA">Thanh Hóa</option><option value="THUATHIENHUE">Thừa Thiên Huế</option><option value="TIENGIANG">Tiền Giang</option><option value="TRAVINH">Trà Vinh</option><option value="TUYENQUANG">Tuyên Quang</option><option value="VINHLONG">Vĩnh Long</option><option value="VINHPHUC">Vĩnh Phúc</option><option value="YENBAI">Yên Bái</option></select><span class="select2 select2-container select2-container--default" dir="ltr" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--single" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-shipping_state-container" role="combobox"><span class="select2-selection__rendered" id="select2-shipping_state-container" role="textbox" aria-readonly="true"><span class="select2-selection__placeholder">Chọn một tùy chọn…</span></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span></span></p><p class="form-row validate-required validate-required form-row-wide" id="shipping_city_field" data-priority="" data-o_class="form-row form-row-wide validate-required validate-required"><label for="shipping_city" class="">Quận/Huyện&nbsp;<abbr class="required" title="bắt buộc">*</abbr></label><select name="shipping_city" id="shipping_city" class="select  select2-hidden-accessible" data-allow_clear="true" data-placeholder="Chọn quận huyện" tabindex="-1" aria-hidden="true" placeholder="Chọn quận huyện">
-                                                            <option value="" selected="selected">Chọn quận huyện</option>
-                                                        </select><span class="select2 select2-container select2-container--default" dir="ltr" style="width: 765px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-shipping_city-container"><span class="select2-selection__rendered" id="select2-shipping_city-container"><span class="select2-selection__placeholder">Chọn quận huyện</span></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span></p><p class="form-row form-row-wide" id="shipping_address_2_field" data-priority=""><label for="shipping_address_2" class="">Xã/Phường/thị trấn&nbsp;<span class="optional">(tuỳ chọn)</span></label><select name="shipping_address_2" id="shipping_address_2" class="select  select2-hidden-accessible" data-allow_clear="true" data-placeholder="Chọn xã/Phường/thị trấn" tabindex="-1" aria-hidden="true" placeholder="Chọn xã/Phường/thị trấn">
-                                                            <option value="" selected="selected">Chọn xã/Phường/thị trấn</option>
-                                                        </select><span class="select2 select2-container select2-container--default" dir="ltr" style="width: 765px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-shipping_address_2-container"><span class="select2-selection__rendered" id="select2-shipping_address_2-container"><span class="select2-selection__placeholder">Chọn xã/Phường/thị trấn</span></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span></p><p class="form-row validate-required form-row-wide" id="shipping_address_1_field" data-priority="44"><label for="shipping_address_1" class="">Địa chỉ&nbsp;<abbr class="required" title="bắt buộc">*</abbr></label><span class="woocommerce-input-wrapper"><input type="text" class="input-text " name="shipping_address_1" id="shipping_address_1" placeholder="Địa chỉ" value="" autocomplete="address-line1" data-placeholder="Địa chỉ"></span></p></div>
-                                        
-                                                    
-                                                    <p>
-                                                        <button type="submit" class="button" name="save_address" value="Lưu địa chỉ">Lưu địa chỉ</button>
-                                                        <input type="hidden" id="woocommerce-edit-address-nonce" name="woocommerce-edit-address-nonce" value="0c86164cdd"><input type="hidden" name="_wp_http_referer" value="/tai-khoan/edit-address/giao-nhan/">				<input type="hidden" name="action" value="edit_address">
-                                                    </p>
-                                                </div>
-                                        
-                                            </form>
-											
+											<form method="post">
+												<div class="woocommerce-address-fields">
+
+													<div class="woocommerce-address-fields__field-wrapper">
+														<p class="form-row form-row-wide validate-required"
+															id="shipping_first_name_field" data-priority=""><label
+																for="shipping_first_name" class="">Họ và tên&nbsp;<abbr
+																	class="required"
+																	title="bắt buộc">*</abbr></label><span
+																class="woocommerce-input-wrapper"><input type="text"
+																	class="input-text " name="shipping_first_name"
+																	id="shipping_first_name"
+																	placeholder="Nhập đầy đủ họ và tên" value="" style="width:300px"></span>
+														</p>
+														<br>
+														<p class="form-row form-row-wide" id="shipping_company_field"
+															data-priority="30"><label for="shipping_company"
+																class="">Tên công ty&nbsp;<span class="optional">(tuỳ
+																	chọn)</span></label><span
+																class="woocommerce-input-wrapper"><input type="text"
+																	class="input-text " name="shipping_company"
+																	id="shipping_company" placeholder="" value=""
+																	autocomplete="organization"style="width:230px"></span></p>
+																	<br>
+														<p class="form-row form-row-wide address-field update_totals_on_change validate-required"
+															id="shipping_country_field" data-priority="40"><label
+																for="shipping_country" class="">Quốc gia/Khu
+																vực&nbsp;<abbr class="required"
+																	title="bắt buộc">*</abbr></label><span
+																class="woocommerce-input-wrapper"><strong>Việt
+																	Nam</strong><input type="hidden"
+																	name="shipping_country" id="shipping_country"
+																	value="VN" autocomplete="country"
+																	class="country_to_state" readonly="readonly"></span>
+														</p>
+														<br>
+														<p class="form-row address-field validate-required validate-state form-row-wide"
+															id="shipping_state_field" data-priority="41"
+															data-o_class="form-row form-row-wide address-field validate-required validate-state">
+															<label for="shipping_state" class="">Tỉnh/Thành
+																phố&nbsp;<abbr class="required"
+																	title="bắt buộc">*</abbr></label><span
+																class="woocommerce-input-wrapper"><select
+																	name="shipping_state" id="shipping_state"
+																	class="state_select select2-hidden-accessible"
+																	autocomplete="address-level1"
+																	data-placeholder="Chọn một tùy chọn…"
+																	data-input-classes="" tabindex="-1"
+																	aria-hidden="true">
+																	<option value="">Chọn một tùy chọn…</option>
+																	<option value="HANOI">Hà Nội</option>
+																	<option value="HOCHIMINH">Hồ Chí Minh</option>
+																	<option value="ANGIANG">An Giang</option>
+																	<option value="BACGIANG">Bắc Giang</option>
+																	<option value="BACKAN">Bắc Kạn</option>
+																	<option value="BACLIEU">Bạc Liêu</option>
+																	<option value="BACNINH">Bắc Ninh</option>
+																	<option value="BARIAVUNGTAU">Bà Rịa - Vũng Tàu
+																	</option>
+																	<option value="BENTRE">Bến Tre</option>
+																	<option value="BINHDINH">Bình Định</option>
+																	<option value="BINHDUONG">Bình Dương</option>
+																	<option value="BINHPHUOC">Bình Phước</option>
+																	<option value="BINHTHUAN">Bình Thuận</option>
+																	<option value="CAMAU">Cà Mau</option>
+																	<option value="CANTHO">Cần Thơ</option>
+																	<option value="CAOBANG">Cao Bằng</option>
+																	<option value="DAKLAK">Đắk Lắk</option>
+																	<option value="DAKNONG">Đắk Nông</option>
+																	<option value="DANANG">Đà Nẵng</option>
+																	<option value="DIENBIEN">Điện Biên</option>
+																	<option value="DONGNAI">Đồng Nai</option>
+																	<option value="DONGTHAP">Đồng Tháp</option>
+																	<option value="GIALAI">Gia Lai</option>
+																	<option value="HAGIANG">Hà Giang</option>
+																	<option value="HAIDUONG">Hải Dương</option>
+																	<option value="HAIPHONG">Hải Phòng</option>
+																	<option value="HANAM">Hà Nam</option>
+																	<option value="HATINH">Hà Tĩnh</option>
+																	<option value="HAUGIANG">Hậu Giang</option>
+																	<option value="HOABINH">Hoà Bình</option>
+																	<option value="HUNGYEN">Hưng Yên</option>
+																	<option value="KHANHHOA">Khánh Hòa</option>
+																	<option value="KIENGIANG">Kiên Giang</option>
+																	<option value="KONTUM">Kon Tum</option>
+																	<option value="LAICHAU">Lai Châu</option>
+																	<option value="LAMDONG">Lâm Đồng</option>
+																	<option value="LANGSON">Lạng Sơn</option>
+																	<option value="LAOCAI">Lào Cai</option>
+																	<option value="LONGAN">Long An</option>
+																	<option value="NAMDINH">Nam Định</option>
+																	<option value="NGHEAN">Nghệ An</option>
+																	<option value="NINHBINH">Ninh Bình</option>
+																	<option value="NINHTHUAN">Ninh Thuận</option>
+																	<option value="PHUTHO">Phú Thọ</option>
+																	<option value="PHUYEN">Phú Yên</option>
+																	<option value="QUANGBINH">Quảng Bình</option>
+																	<option value="QUANGNAM">Quảng Nam</option>
+																	<option value="QUANGNGAI">Quảng Ngãi</option>
+																	<option value="QUANGNINH">Quảng Ninh</option>
+																	<option value="QUANGTRI">Quảng Trị</option>
+																	<option value="SOCTRANG">Sóc Trăng</option>
+																	<option value="SONLA">Sơn La</option>
+																	<option value="TAYNINH">Tây Ninh</option>
+																	<option value="THAIBINH">Thái Bình</option>
+																	<option value="THAINGUYEN">Thái Nguyên</option>
+																	<option value="THANHHOA">Thanh Hóa</option>
+																	<option value="THUATHIENHUE">Thừa Thiên Huế</option>
+																	<option value="TIENGIANG">Tiền Giang</option>
+																	<option value="TRAVINH">Trà Vinh</option>
+																	<option value="TUYENQUANG">Tuyên Quang</option>
+																	<option value="VINHLONG">Vĩnh Long</option>
+																	<option value="VINHPHUC">Vĩnh Phúc</option>
+																	<option value="YENBAI">Yên Bái</option>
+																</select><span
+																	class="select2 select2-container select2-container--default"
+																	dir="ltr" style="width: 100%;"><span
+																		class="selection"><span
+																			class="select2-selection select2-selection--single"
+																			aria-haspopup="true" aria-expanded="false"
+																			tabindex="0"
+																			aria-labelledby="select2-shipping_state-container"
+																			role="combobox"><span
+																				class="select2-selection__rendered"
+																				id="select2-shipping_state-container"
+																				role="textbox"
+																				aria-readonly="true"><span
+																					class="select2-selection__placeholder">Chọn
+																					một tùy chọn…</span></span><span
+																				class="select2-selection__arrow"
+																				role="presentation"><b
+																					role="presentation"></b></span></span></span><span
+																		class="dropdown-wrapper"
+																		aria-hidden="true"></span></span></span></p>
+																		<br>
+														<p class="form-row validate-required validate-required form-row-wide"
+															id="shipping_city_field" data-priority=""
+															data-o_class="form-row form-row-wide validate-required validate-required">
+															<label for="shipping_city" class="">Quận/Huyện&nbsp;<abbr
+																	class="required"
+																	title="bắt buộc">*</abbr></label><select
+																name="shipping_city" id="shipping_city"
+																class="select  select2-hidden-accessible"
+																data-allow_clear="true"
+																data-placeholder="Chọn quận huyện" tabindex="-1"
+																aria-hidden="true" placeholder="Chọn quận huyện">
+																<option value="" selected="selected">Chọn quận huyện
+																</option>
+															</select><span
+																class="select2 select2-container select2-container--default"
+																dir="ltr" style="width: 765px;"><span
+																	class="selection"><span
+																		class="select2-selection select2-selection--single"
+																		role="combobox" aria-haspopup="true"
+																		aria-expanded="false" tabindex="0"
+																		aria-labelledby="select2-shipping_city-container"><span
+																			class="select2-selection__rendered"
+																			id="select2-shipping_city-container"><span
+																				class="select2-selection__placeholder">Chọn
+																				quận huyện</span></span><span
+																			class="select2-selection__arrow"
+																			role="presentation"><b
+																				role="presentation"></b></span></span></span><span
+																	class="dropdown-wrapper"
+																	aria-hidden="true"></span></span></p>
+																	<br>
+														<p class="form-row form-row-wide" id="shipping_address_2_field"
+															data-priority=""><label for="shipping_address_2"
+																class="">Xã/Phường/thị trấn&nbsp;<span
+																	class="optional">(tuỳ chọn)</span></label><select
+																name="shipping_address_2" id="shipping_address_2"
+																class="select  select2-hidden-accessible"
+																data-allow_clear="true"
+																data-placeholder="Chọn xã/Phường/thị trấn" tabindex="-1"
+																aria-hidden="true"
+																placeholder="Chọn xã/Phường/thị trấn">
+																<option value="" selected="selected">Chọn xã/Phường/thị
+																	trấn</option>
+															</select><span
+																class="select2 select2-container select2-container--default"
+																dir="ltr" style="width: 765px;"><span
+																	class="selection"><span
+																		class="select2-selection select2-selection--single"
+																		role="combobox" aria-haspopup="true"
+																		aria-expanded="false" tabindex="0"
+																		aria-labelledby="select2-shipping_address_2-container"><span
+																			class="select2-selection__rendered"
+																			id="select2-shipping_address_2-container"><span
+																				class="select2-selection__placeholder">Chọn
+																				xã/Phường/thị trấn</span></span><span
+																			class="select2-selection__arrow"
+																			role="presentation"><b
+																				role="presentation"></b></span></span></span><span
+																	class="dropdown-wrapper"
+																	aria-hidden="true"></span></span></p>
+																	<br>
+														<p class="form-row validate-required form-row-wide"
+															id="shipping_address_1_field" data-priority="44"><label
+																for="shipping_address_1" class="">Địa chỉ&nbsp;<abbr
+																	class="required"
+																	title="bắt buộc">*</abbr></label><span
+																class="woocommerce-input-wrapper"><input type="text"
+																	class="input-text " name="shipping_address_1"
+																	id="shipping_address_1" placeholder="Địa chỉ"
+																	value="" autocomplete="address-line1"
+																	data-placeholder="Địa chỉ" style="width:310px"></span></p>
+																	<br>
+													</div>
+
+
+													<p>
+														<button type="submit" class="button" name="save_address"
+															value="Lưu địa chỉ" style="border: 2px solid rgb(9, 9, 65); border-radius: 30px;width: 100px;background-color: aqua;">Lưu địa chỉ</button>
+														<input type="hidden" id="woocommerce-edit-address-nonce"
+															name="woocommerce-edit-address-nonce"
+															value="0c86164cdd"><input type="hidden"
+															name="_wp_http_referer"
+															value="/tai-khoan/edit-address/giao-nhan/"> <input
+															type="hidden" name="action" value="edit_address">
+													</p>
+												</div>
+
+											</form>
+
 										</div>
 									</div>
 								</div>
@@ -1179,16 +1384,16 @@
 												<a href="/diemthanhvien.html">TST points</a>
 											</li>
 
-											
+
 
 										</ul>
 
-									</div>	
+									</div>
 
 
 								</div>
 							</div>
-							
+
 
 							<div class="col-sm-6 col-md-4 col-xs-12 clear-sm">
 								<div class="widget-wrapper animated">

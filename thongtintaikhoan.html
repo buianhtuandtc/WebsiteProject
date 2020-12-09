@@ -47,7 +47,7 @@
 		!function (f, b, e, v, n, t, s) {
 			if (f.fbq) return; n = f.fbq = function () {
 				n.callMethod ?
-				n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+					n.callMethod.apply(n, arguments) : n.queue.push(arguments)
 			}; if (!f._fbq) f._fbq = n;
 			n.push = n; n.loaded = !0; n.version = '2.0'; n.queue = []; t = b.createElement(e); t.async = !0;
 			t.src = v; s = b.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t, s)
@@ -1058,19 +1058,20 @@
 													<input type="text"
 														class="woocommerce-Input woocommerce-Input--text input-text"
 														name="account_first_name" id="account_first_name"
-														autocomplete="given-name" value="">
+														autocomplete="given-name" value="" style="width:300px">
 												</p>
+												<br>
 												<p
 													class="woocommerce-form-row woocommerce-form-row--last form-row form-row-last">
 													<label for="account_last_name">Họ&nbsp;<span
-															class="required">*</span></label>
+															class="required">*&nbsp; </span></label>
 													<input type="text"
 														class="woocommerce-Input woocommerce-Input--text input-text"
 														name="account_last_name" id="account_last_name"
-														autocomplete="family-name" value="">
+														autocomplete="family-name" value="" style="width:300px">
 												</p>
 												<div class="clear"></div>
-
+												<br>
 												<p
 													class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
 													<label for="account_display_name">Tên hiển thị&nbsp;<span
@@ -1081,6 +1082,7 @@
 														value="18130267"> <span><em>Tên này sẽ hiển thị trong trang Tài
 															khoản và phần Đánh giá sản phẩm</em></span>
 												</p>
+												<br>
 												<div class="clear"></div>
 
 												<p
@@ -1090,22 +1092,23 @@
 													<input type="email"
 														class="woocommerce-Input woocommerce-Input--email input-text"
 														name="account_email" id="account_email" autocomplete="email"
-														value="18130267@st.hcmuaf.edu.vn">
+														value="xxxxxx@st.hcmuaf.edu.vn" style="width: 300px;">
 												</p>
-
+												<br>
 												<fieldset>
 													<legend>Thay đổi mật khẩu</legend>
 
 													<p
 														class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
 														<label for="password_current">Mật khẩu hiện tại (bỏ trống nếu
-															không đổi)</label>
+															không đổi)&nbsp;&nbsp;</label>
 														<span class="password-input"><input type="password"
 																class="woocommerce-Input woocommerce-Input--password input-text"
 																name="password_current" id="password_current"
 																autocomplete="off"><span
 																class="show-password-input"></span></span>
 													</p>
+													<br>
 													<p
 														class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
 														<label for="password_1">Mật khẩu mới (bỏ trống nếu không
@@ -1116,6 +1119,7 @@
 																autocomplete="off"><span
 																class="show-password-input"></span></span>
 													</p>
+													<br>
 													<p
 														class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
 														<label for="password_2">Xác nhận mật khẩu mới</label>
@@ -1128,14 +1132,16 @@
 												</fieldset>
 												<div class="clear"></div>
 
-
+												<BR>
 												<p>
 													<input type="hidden" id="save-account-details-nonce"
 														name="save-account-details-nonce" value="0e4d4d0fe5"><input
 														type="hidden" name="_wp_http_referer"
 														value="/tai-khoan/edit-account/"> <button type="submit"
 														class="woocommerce-Button button" name="save_account_details"
-														value="Lưu thay đổi">Lưu thay đổi</button>
+														value="Lưu thay đổi"
+														style="border: 2px solid rgb(9, 9, 65); border-radius: 30px;width: 100px;background-color: aqua;">Lưu
+														thay đổi</button>
 													<input type="hidden" name="action" value="save_account_details">
 												</p>
 
@@ -1254,16 +1260,16 @@
 												<a href="/diemthanhvien.html">TST points</a>
 											</li>
 
-											
+
 
 										</ul>
 
-									</div>	
+									</div>
 
 
 								</div>
 							</div>
-							
+
 
 							<div class="col-sm-6 col-md-4 col-xs-12 clear-sm">
 								<div class="widget-wrapper animated">
